@@ -90,7 +90,7 @@ resource "aws_instance" "jenkins_instance" {
   subnet_id              = aws_default_subnet.default_az1.id
   vpc_security_group_ids = [aws_security_group.ec2_security_group_jenkins.id]
   key_name               = "martins"
-  # user_data            = file("install_jenkins.sh")
+   user_data            = file("${path.module}/install_jenkins.sh")
 
   tags = {
     Name = "jenkins_server"
