@@ -2,7 +2,7 @@
 
 # Update system and install Java
 sudo apt update -y
-sudo apt install openjdk-11-jdk -y
+sudo apt install openjdk-17-jdk -y
 
 # Add Jenkins key and repo
 wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
